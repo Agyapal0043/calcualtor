@@ -48,13 +48,13 @@ const Calculator = () => {
         <button onClick={() => handleButtonClick('7')}>7</button>
         <button onClick={() => handleButtonClick('8')}>8</button>
         <button onClick={() => handleButtonClick('9')}>9</button>
-        <button onClick={() => handleButtonClick('/')}>/</button>
+        <button className='b3'onClick={() => handleButtonClick('/')}>DEL</button>
         </div>
         <div className="button-container">
         <button onClick={() => handleButtonClick('4')}>4</button>
         <button onClick={() => handleButtonClick('5')}>5</button>
         <button onClick={() => handleButtonClick('6')}>6</button>
-        <button onClick={() => handleButtonClick('*')}>*</button>
+        <button onClick={() => handleButtonClick('+')}>+</button>
         </div>
         <div className="button-container">
         <button onClick={() => handleButtonClick('1')}>1</button>
@@ -63,22 +63,18 @@ const Calculator = () => {
         <button onClick={() => handleButtonClick('-')}>-</button>
         </div>
         <div className="button-container">
-        <button onClick={() => handleButtonClick('0')}>0</button>
         <button onClick={() => handleButtonClick('.')}>.</button>
-        <button onClick={handleCalculate}>=</button>
-        <button onClick={() => handleButtonClick('+')}>+</button>
+        <button onClick={() => handleButtonClick('0')}>0</button>
+        <button onClick={() => handleButtonClick('/')}>/</button>
+        <button onClick={() => handleButtonClick('*')}>x</button>
       </div>
       <div className="button-container">
-        <button className="b1" onClick={handleCalculate}>Result</button>
-        <button className="b1"  onClick={handleClear}>clear</button>
+        <button className="b1" onClick={handleClear}>RESET</button>
+        <button className="b2"  onClick={handleCalculate}>=</button>
         
       </div>
       </div>
-      <div className="result-container">
-        <p>Result: </p>
-        <p className='result'>{result}</p>
-      </div>
-
+      
       </div>
     </div>
   );
