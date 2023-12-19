@@ -74,10 +74,7 @@ const Calculator = () => {
             <button className="b1" onClick={handleClear}>RESET</button>
             <button className="b2" onClick={handleCalculate}>=</button>
           </div>
-          <div className="result-container">
-            <p>Result: </p>
-            <p className='result'>{result}</p>
-          </div>
+        
         </div>
       </div>
     </div>
